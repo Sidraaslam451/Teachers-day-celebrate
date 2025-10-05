@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f6d365, #fda085);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #ff6f61;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ff3b2e;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+
+/* Confetti dots */
+.confetti {
+  width: 10px;
+  height: 10px;
+  background-color: #ff6f61;
+  border-radius: 50%;
+  position: absolute;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
